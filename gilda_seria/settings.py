@@ -26,7 +26,7 @@ SECRET_KEY = 'zzt@jc1_+^bjh52ry8_#xgl!-x1i7&s+=i6rnviqqlv!fmdvkb'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['gilda-seria.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
