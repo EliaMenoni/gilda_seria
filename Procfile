@@ -1,1 +1,1 @@
-web: gunicorn Gilda_Seria.wsgi:application --log-file -
+web: gunicorn gilda_seria.wsgi:application --log-file -
