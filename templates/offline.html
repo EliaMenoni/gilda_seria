@@ -1,0 +1,54 @@
+{% extends "struttura/body.html"%}
+{% load static %}
+
+{% block titolo %}
+Offline
+{% endblock %}
+
+{% block navbar %}
+{% endblock %}
+
+{% block corpo %}
+<div class="nk-main">
+  <div class="nk-fullscreen-block">
+    <div class="nk-fullscreen-block-top">
+      <div class="text-center">
+        <div class="nk-gap-4"></div>
+        <a href="index.html"><img src="{% static 'assets/images/logo-2.png' %}" alt="GoodGames"></a>
+        <div class="nk-gap-2"></div>
+      </div>
+    </div>
+    <div class="nk-fullscreen-block-middle">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+            <h1 class="h2"><span class="text-main-1">Sito</span> Offline</h1>
+
+            <div class="text-white">Il sito al momento è offline. Concedici un pò di tempo per sistemare la cosa :)</div>
+            <div class="nk-gap-2"></div>
+          </div>
+        </div>
+        <div class="nk-gap-3"></div>
+      </div>
+    </div>
+    <div class="nk-fullscreen-block-bottom">
+      <div class="nk-gap-2"></div>
+      <ul class="nk-social-links-2 nk-social-links-center">
+        <li><a class="nk-social-twitch" href="#"><span class="fab fa-twitch"></span></a></li>
+        <li><a class="nk-social-steam" href="#"><span class="fab fa-steam"></span></a></li>
+        <li><a class="nk-social-facebook" href="#"><span class="fab fa-facebook"></span></a></li>
+        <li><a class="nk-social-twitter" href="#" target="_blank"><span class="fab fa-twitter"></span></a></li>
+      </ul>
+      <div class="nk-gap-2"></div>
+    </div>
+  </div>
+</div>
+
+<!-- START: Page Background -->
+<div class="nk-page-background-fixed" style="background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('/static/assets/images/shadow_icecrown_bg.jpeg')"></div>
+
+<!-- END: Page Background -->
+{% endblock %}
+
+{% block footer %}
+{% endblock %}
