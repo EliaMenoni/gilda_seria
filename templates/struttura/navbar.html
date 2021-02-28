@@ -1,0 +1,136 @@
+{% load static %}
+
+<header class="nk-header nk-header-opaque">
+  <div class="nk-contacts-top">
+    <div class="container">
+      <div class="nk-contacts-left">
+        <ul class="nk-social-links">
+          <li><a class="nk-social-twitch" href="#"><span class="fab fa-twitch"></span></a></li>
+          <li><a class="nk-social-facebook" href="#"><span class="fab fa-facebook"></span></a></li>
+          <li><a class="nk-social-twitter" href="#" target="_blank"><span class="fab fa-twitter"></span></a></li>
+        </ul>
+      </div>
+      <div class="nk-contacts-right">
+        <ul class="nk-contacts-icons">
+          <li>
+            <a href="#" data-toggle="modal" data-target="#modalSearch">
+              <span class="fa fa-search"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-toggle="modal" data-target="#modalLogin">
+              <span class="fa fa-user"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <nav class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar-autohide">
+    <div class="container">
+      <div class="nk-nav-table">
+        <a href="index.html" class="nk-nav-logo">
+          <img src="{% static 'assets/images/guild_temp.png' %}" alt="GoodGames" width="50">
+        </a>
+        <ul class="nk-nav nk-nav-right d-none d-lg-table-cell" data-nav-mobile="#nk-nav-mobile">
+          <li>
+            <a href="#">
+              Chi siamo
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Info
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Galleria
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Progresso
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Partecipa
+            </a>
+          </li>
+        </ul>
+        <ul class="nk-nav nk-nav-right nk-nav-icons">
+          <li class="single-icon d-lg-none">
+            <a href="#" class="no-link-effect" data-nav-toggle="#nk-nav-mobile">
+              <span class="nk-icon-burger">
+                <span class="nk-t-1"></span>
+                <span class="nk-t-2"></span>
+                <span class="nk-t-3"></span>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- START: Search Modal -->
+<div class="nk-modal modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="ion-android-close"></span>
+        </button>
+        <h4 class="mb-0">Cerca</h4>
+        <div class="nk-gap-1"></div>
+        <form action="#" class="nk-form nk-form-style-1">
+          <input type="text" value="" name="search" class="form-control" placeholder="Scrivi qualcosa e premi invio"
+            autofocus>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END: Search Modal -->
+
+<!-- START: Login Modal -->
+<div class="nk-modal modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="ion-android-close"></span>
+        </button>
+        <h4 class="mb-0"><span class="text-main-1">Sign</span> In</h4>
+        <div class="nk-gap-1"></div>
+        <form action="#" class="nk-form text-white">
+          <div class="row vertical-gap">
+            <div class="col-md-6">
+              Usa email e password:
+              <div class="nk-gap"></div>
+              <input type="email" value="" name="email" class=" form-control" placeholder="Email">
+              <div class="nk-gap"></div>
+              <input type="password" value="" name="password" class="required form-control" placeholder="Password">
+            </div>
+          </div>
+          <div class="nk-gap-1"></div>
+          <div class="row vertical-gap">
+            <div class="col-md-6">
+              <a href="#" class="nk-btn nk-btn-rounded nk-btn-color-white nk-btn-block">Sign In</a>
+            </div>
+            <div class="col-md-6">
+              <div class="mnt-5">
+                <small><a href="#">Password dimenticata?</a></small>
+              </div>
+              <div class="mnt-5">
+                <small><a href="#">Non sei un membro? Iscriviti!</a></small>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

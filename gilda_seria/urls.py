@@ -18,7 +18,8 @@ from django.urls import path, include
 from django.views.generic import TemplateView as TP
 
 urlpatterns = [
-  path('', TP.as_view(template_name='offline.html'), name='home'),
-  path('home', TP.as_view(template_name='offline.html'), name='home'),
+  path('', TP.as_view(template_name='home.html'), name='home'),
+  path('home', TP.as_view(template_name='home.html'), name='home'),
+  path('articoli/', include('gestione_articoli.urls'), name='articoli'),
   path('admin/', admin.site.urls),
 ]
